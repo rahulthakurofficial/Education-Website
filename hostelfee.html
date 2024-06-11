@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            outline:none;
+            border:none;
+            text-transform: capitalize;
+            transition: all .2s linear;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            padding: 25px;
+            min-height: 100vh;
+            background: linear-gradient(90deg, #2ecc71 70%, #27ae60 40.1%);
+            padding-bottom: 70px;
+        }
+        .container form{
+            padding:20px;
+            width:700px;
+            background: #fff;
+            box-shadow: 0 5px 10px rgba(0,0,0.1);
+        }
+        .container form .row{
+            display:flex;
+            flex-wrap: wrap;
+            gap:15px;
+        }
+        .container form .row .col{
+            flex:1 1 250px;
+        }
+        .container form .row .col .title{
+            font-size: 20px;
+            color:#333;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .container form .row .col .inputBox{
+            margin-bottom: 10px;
+            display:block;
+        }
+        .container form .row .col .inputBox input{
+            width:100%;
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+            font-size: 15px;
+            text-transform: none;
+        }
+        .container form .row .col .input input:focus{
+            border:1px solid #000;
+        }
+        .container form .row .col .flex{
+            display:flex;
+            gap:15px;
+        }
+        .container form .row .col .flex .inputBox{
+            margin-top: 5px;
+        }
+        .container form .row .col .inputBox img{
+            height:34px;
+            margin-top: 5px;
+            filter:drop-shadow(0 0 1px #000)
+        }
+        .container form .submit-btn{
+            width: 100%;
+            padding: 12px;
+            font-size: 17px;
+            background: greenyellow;
+            color: #fff;
+            margin-top: 5px;
+            cursor:pointer;
+
+        }
+        .container form .submit-btn:hover{
+            background: greenyellow;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="Thanks.html"method="post">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Billing Address</h3>
+                    <div class="inputBox">
+                        <span>Full Name :</span>
+                        <input type="text" placeholder="Your Name">
+                    </div>
+                    <div class="inputBox">
+                        <span>Email :</span>
+                        <input type="email" placeholder="example@gmail.com">
+                    </div>
+                    <div class="inputBox">
+                        <span>Address :</span>
+                        <input type="Address" placeholder="My Address">
+                    </div>
+                    <div class="inputBox">
+                        <span>Roll No.:</span>
+                        <input type="number" placeholder=" ">
+                    </div>
+                    <div class="inputBox">
+                        <span>Hostel Name :</span>
+                        <input type="text" placeholder="Hostel Name">
+                    </div>
+                    <div class="inputBox">
+                        <span>Room No. :</span>
+                        <input type="number" placeholder="122">
+                    </div>
+                    <div class="inputBox">
+                        <span>module :</span>
+                        <input type="text" placeholder="B.Tech">
+                    </div>
+                    <div class="inputBox">
+                        <span>Year :</span>
+                        <input type="text" placeholder="enter your current year">
+                    </div>
+                    <div class="inputBox">
+                        <span>semester :</span>
+                        <input type="text" placeholder="enter your current semester">
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="title">Payment Options</h3>
+                    <div class="inputBox">
+                        <label for="paymentMethod">Select payment method:</label>
+                        <select id="paymentMethod" name="paymentMethod" onchange="togglePaymentOption()">
+                            <option value="card">Card Payment</option>
+                            <option value="upi">UPI Payment</option>
+                        </select>
+                    </div>
+                    <div id="cardPayment" class="payment-option">
+                        <!-- Card payment options -->
+                        <div class="inputBox">
+                            <span>Cards Accepted :</span>
+                            <img src="Images/cards.jpeg" alt="Description" width="70" height="50">
+                        </div>
+                        <div class="inputBox">
+                            <span>Name on Card :</span>
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                        <div class="inputBox">
+                            <span>Credit Card Number :</span>
+                            <input type="number" placeholder="111122222333444">
+                        </div>
+                        <div class="inputBox">
+                            <span>Exp Month :</span>
+                            <input type="text" placeholder="January">
+                        </div>
+                        <div class="inputBox">
+                            <span>Exp Year :</span>
+                            <input type="number" placeholder="2024">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="12234">
+                        </div>
+                    </div>
+                    <div id="upiPayment" class="payment-option" style="display: none;">
+                        <!-- UPI payment options -->
+                        <div class="inputBox">
+                            <label for="paymentMethod">Select payment method:</label>
+                            <select id="paymentMethod" name="paymentMethod" onchange="togglePaymentOption()">
+                                <option value="scan">Scan Barcode</option>
+                                <option value="manual">Enter UPI ID</option>
+                            </select>
+                        </div>
+                        <div id="scanOption" class="payment-option">
+                            <!-- Barcode scanning option -->
+                            <p>Scan the barcode using your UPI app</p>
+                            <!-- Placeholder for barcode scanner -->
+                            <img src="Images/scanner.png" alt="Barcode Image">
+                        </div>
+                        <div id="manualOption" class="payment-option" style="display: none;">
+                            <!-- Manual entry option -->
+                            <div class="inputBox">
+                                <label for="upiID">Enter UPI ID:</label>
+                                <input type="text" id="upiID" name="upiID" placeholder="example@upi">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Proceed to Checkout" class="submit-btn">
+        </form>
+    </div>
+
+    <script>
+        function togglePaymentOption() {
+            var paymentMethod = document.getElementById("paymentMethod").value;
+            var cardPayment = document.getElementById("cardPayment");
+            var upiPayment = document.getElementById("upiPayment");
+
+            if (paymentMethod === "card") {
+                cardPayment.style.display = "block";
+                upiPayment.style.display = "none";
+            } else {
+                cardPayment.style.display = "none";
+                upiPayment.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

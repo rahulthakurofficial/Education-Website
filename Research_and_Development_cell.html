@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IISRO Technical Page</title>
+    <link rel="icon" href="./Images/iitLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./university.css">
+    <script src="./university.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Jost', sans-serif;
+            background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+        }
+        .technical-section {
+            padding: 60px 0;
+            text-align: center;
+            color: #fff;
+        }
+        .technical-section h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .technical-section p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        .technical-section .card {
+            background-color: #24243e;
+            border: none;
+            color: #fff;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .technical-section .card img {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .technical-section .card-body {
+            padding: 20px;
+        }
+        .technical-section .card-title {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .technical-section .card-text {
+            font-size: 1em;
+        }
+        .footer {
+            background: #111;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer h5, .footer h3 {
+            color: #fff;
+        }
+        /* Hover effect for images */
+.card img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image */
+    opacity: 0.8; /* Slightly reduce the opacity */
+}
+
+/* Hover effect for card titles */
+.card-title {
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.card-title:hover {
+    color: #ffa500; /* Change the color on hover */
+    text-decoration: underline; /* Underline the text on hover */
+}
+
+/* Hover effect for card text */
+.card-text {
+    transition: color 0.3s ease;
+}
+
+.card-text:hover {
+    color: #ffa500; /* Change the color on hover */
+}
+.footerContainer, .footerContainer a {
+  color: white; /* Set your desired text color here */
+}
+
+.footerContainer a {
+  text-decoration: none; /* Remove underline from links */
+}
+
+.footerContainer a:hover {
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
+.footerContainer, .footerContainer a {
+    color: white; /* Set your desired text color here */
+}
+
+.footerContainer a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footerContainer a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+    color: #ffa500; /* Optional: Change color on hover */
+}
+
+.footerContainer ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+        .card-img-top {
+            height: 300px;
+            object-fit: cover;
+        }
+    </style>
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./Images/iitLogo.png" style="height: 40px; width: 50px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Facilities
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Research_and_Development_cell.html">Research and Development Cell</a></li>
+                            <li><a class="dropdown-item" href="#">Auditorium</a></li>
+                            <li><a class="dropdown-item" href="#">Hostels</a></li>
+                            <li><a class="dropdown-item" href="#">Library</a></li>
+                            <li><a class="dropdown-item" href="#">IIT Health Units</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Administration
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="faculties.html">Faculties</a></li>
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">Members of the IIT society</a></li>
+                            <li><a class="dropdown-item" href="#">Offices</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admission
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Admission Structure</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact_us.html" tabindex="-1" aria-disabled="true">Contact us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Technical Section -->
+    <!-- <div class="technical-section">
+        <div class="container">
+            <h1>IIT Bombay Projects</h1>
+            <p>Explore the latest advancements and research projects at the Indian Institute Technology Bombay (IIT).</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="./Images/ml.jpg" style="height: 300px; width: 350px;" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Machine learning</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="./Images/vlsi.jpg" style="height: 300px; width: 350px;" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">VLSI Cheap design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="./Images/electric.jpg" style="height: 300px; width: 350px;" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Ev Projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="technical-section">
+        <div class="container">
+            <h1>IIT Bombay Projects</h1>
+            <p>Explore the latest advancements and research projects at the Indian Institute Technology Bombay (IIT).</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <a href="Research2.html">
+                            <img src="./Images/ml.jpg" class="card-img-top" alt="Project Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 1</h5>
+                                <p class="card-text">Machine Learning</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <a href="Research1.html">
+                            <img src="./Images/vlsi.jpg" class="card-img-top" alt="Project Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 2</h5>
+                                <p class="card-text">VLSI Chip Design</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <a href="Research3.html">
+                            <img src="./Images/electric.jpg" class="card-img-top" alt="Project Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 3</h5>
+                                <p class="card-text">Electric Vehicle Projects</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+   
+<div class="footer py-5">
+    <div class="container footerContainer">
+      <div class="row footerData">
+        <div class="col-lg-4 col-sm-12">
+            <center><h3>Important links</h3></center>
+            <hr style="color:white"/>
+            <div class="row">
+                <div class="col-md-3">
+                    
+                </div>
+                <div class="col-md-9">
+                   
+                      <ul>
+                        <li><a href="https://www.aicte-india.org/">AICTE</a></li>
+                        
+                        <li><a href="https://www.ugc.gov.in/">UGC</a></li>
+                        <li><a href="https://www.education.gov.in/">Ministry of Eduction</a></li>
+                        <li><a href="https://www.nerist.ac.in/moocs">MOOCS</a></li>
+                        <li><a href="https://nerist.ac.in/nirf">NIRF</a></li>
+                        <li><a href="https://www.nad.gov.in/">NAD</a></li>
+                       
+                       </ul>
+                </div>
+            </div>
+        </div>
+  
+        <div class="col-lg-4 col-sm-12">
+            <center><h3>Download</h3></center>
+            <hr style="color:white"/>
+            <div class="row">
+                <div class="col-md-3">
+                   
+                </div>
+                <div class="col-md-9">
+                   <ul>
+                    <li><a href="https://nerist.ac.in/download-employeeforms">Download Forms</a></li>
+                    <li><a href="https://nerist.ac.in/etc/techno-manuals">Manuals</a></li>
+                    <li><a>SC/ST Grievance Portal</a></li>
+                    <li><a>NAD Cell,NERIST</a></li>
+                    <li><a>Video of NAD</a></li>
+                    <li><a>Covid-19eBook</a></li>
+                    <li><a>Convocation Photos</a></li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+  
+        <div class="col-lg-4 col-sm-12">
+            <center><h3>online support</h3></center>
+            <hr style="color:white"/>
+            <div class="row">
+                <div class="col-md-3">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <div class="col-md-9">
+                    <p>We provide 24x7 online support to our students for any concerns/queries.<br/>
+                    <i class="fa-solid fa-phone" style="font-size: small;"></i>+91 987654324<br/>
+                    <i class="fa-solid fa-envelope" style="font-size: small;"></i> iitbombay@gamil.com</p>
+                </div>
+            </div>
+        </div>
+        <hr/>
+  
+      </div>
+    </div>
+  
+    <div class="container-fluid text-center ">
+        <div class="row-lg-8 m-auto">
+            <p>Copyright © 2024 Organic. All Rights Reserved &nbsp;&nbsp;<img src="./images/visa.jpg" height="35" width="50">
+                <img src="./images/Rupay.jpg" height="35" width="50">
+                <img src="./images/mastercard.png" height="35" width="50">
+        </div>
+    </div>
+  </div> 
+  
+</body>
+</html>

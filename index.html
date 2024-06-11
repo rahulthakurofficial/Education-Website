@@ -1,0 +1,536 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Institute of Technology Bombay</title>
+    <link rel="icon" href="./Images/iitLogo.png" type="images/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./university.css">
+    <script src="./university.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .footerContainer, .footerContainer a {
+  color: white; 
+}
+
+.footerContainer a {
+  text-decoration: none; 
+}
+
+.footerContainer a:hover {
+  text-decoration: underline; 
+}
+.footerContainer, .footerContainer a {
+    color: white; 
+}
+
+.footerContainer a {
+    text-decoration: none; 
+}
+
+.footerContainer a:hover {
+    text-decoration: underline; 
+    color: #ffa500; 
+}
+
+.footerContainer ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+.notice-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+        }
+        .notice-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .card-title {
+            font-size: 1.5rem;
+        }
+        .card-text {
+            font-size: 1rem;
+        }
+        .notice-section {
+            margin-top: 20px;
+        }
+        .department-card {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+      background-color: #f8f9fa;
+    }
+    .department-card h5 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .department-card p {
+      font-size: 14px;
+      color: #666;}
+      .department-card {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+      background-color: #fff3cd;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .department-card h5 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .department-card p {
+      font-size: 14px;
+      color: #666;
+    }
+    .department-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .partner-logo {
+            max-width: 100px;
+            margin: 0 auto;
+            transition: transform 0.3s;
+        }
+        .partner-logo:hover {
+            transform: scale(1.1);
+        }
+        .partner-card {
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #f0f0f0;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            background-color: #ffffff;
+        }
+        .partner-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .section-subtitle {
+            color: #6c757d;
+            margin-bottom: 2rem;
+        }
+        .students-corner {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+        .students-corner .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .students-corner .section-subtitle {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+        .students-corner .info-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .students-corner .info-link:hover {
+            color: #0056b3;
+        }
+        .students-corner .card {
+            border: none;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .students-corner .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+        .students-corner .card img {
+            border-radius: 0.75rem 0.75rem 0 0;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./Images/iitLogo.png" style="height: 40px; width: 50px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Facilities
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Research_and_Development_cell.html">Research and Development Cell</a></li>
+                  <li><a class="dropdown-item" href="Library.html">Library</a></li>
+                  <li><a class="dropdown-item" href="hostelfee.html">Hostels</a></li>
+                  <li><a class="dropdown-item" href="#">Auditorium</a></li>
+                  <li><a class="dropdown-item" href="#">IIT Health Units</a></li>
+                </ul>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Administration
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="faculties.html">Faculties</a></li>
+                  <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
+                  <li><a class="dropdown-item" href="#">Members of the IIT society</a></li>
+                  
+                  <li><a class="dropdown-item" href="#">Offices</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Admission
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="admission.html">Admission Structure</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact_us.html" tabindex="-1" aria-disabled="true">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="login.html" >Login</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+       <!-- carosel  -->
+       <section style="height: 400px;">
+       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Images/banner.jpg" style="height: 400px;" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Images/banner2.jpg" style="height: 400px;" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Images/new1.jpg" style="height: 400px;" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <!-- body -->
+      <div class="container notice-section">
+        <h1 class="text-center mb-5">Progressive Education Society Notices</h1>
+        <div class="row">
+            <!-- General Notice Column -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card notice-card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">General Notice</h4>
+                        <ul class="list-unstyled">
+                            <li><strong>11 December 2023:</strong> Best Student Trophy Contest 2023-24</li>
+                            <li><strong>2 March 2022:</strong> General Notices (Senior and PG Section)</li>
+                            <li><strong>31 May 2018:</strong> College Prospectus</li>
+                            <li><strong>24 June 2015:</strong> About online Anti-ragging form submission</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-success mt-3">View All</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Admission Notices Column -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card notice-card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">Admission Notices</h4>
+                        <ul class="list-unstyled">
+                            <li><strong>26 May 2023:</strong> First Year UG Admission Notice For the Academic Year 2024-25</li>
+                            <li><strong>16 June 2023:</strong> M.A / M.Com. / M.Sc. /M.Voc. / P.G.D.B.F. Online Entrance Examinations Registration notice 2024</li>
+                            <li><strong>9 June 2015:</strong> Rules For The Cancellation of Admission</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-success mt-3">View All</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Examination Notices Column -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card notice-card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">Examination Notices</h4>
+                        <ul class="list-unstyled">
+                            <li><strong>13 November 2023:</strong> PG NEP Timetable (2023-24)</li>
+                            <li><strong>16 November 2023:</strong> First Year End Semester Examination (NEP) Timetables (2023-24)</li>
+                            <li><strong>27 September 2023:</strong> CIE Timetable (FY NEP 2023-24)</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-success mt-3">View All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+            <!-- <div class="text-center mb-5">
+                <h1>Our Departments</h1>
+                <p>Workshops, guest lectures, seminars, exhibitions, and quiz competitions for the overall development of the students.</p>
+                <button class="btn btn-outline-secondary">View All Courses</button>
+            </div> -->
+            <div class="text-center mb-5">
+              <h1>Our Departments</h1>
+              <p>Workshops, guest lectures, seminars, exhibitions, and quiz competitions for the overall development of the students.</p>
+              <button class="btn btn-outline-secondary" onclick="goToNextPage()">View All Courses</button>
+          </div>
+          
+    
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="department-card" onclick="location.href='junior-college.html'">
+                        <img src="./Images/jc.svg" alt="Junior College">
+                        <h5>Junior College</h5>
+                        <p>11th admission, 12th admission.</p>
+                        <a href="juniorcollege.html" class="btn btn-primary">View Courses</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="department-card" onclick="location.href='senior-college.html'">
+                        <img src="./Images/sc.svg" alt="Senior College">
+                        <h5>Senior College</h5>
+                        <p>Admission details for the academic Year 2022-23.</p>
+                        <a href="senior.html" class="btn btn-primary">View Courses</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="department-card" onclick="location.href='post-graduate.html'">
+                        <img src="./Images/pg.svg" alt="Post Graduate">
+                        <h5>Post Graduate</h5>
+                        <p>Seat Allotment List of IIT Bombay.</p>
+                        <a href="pg.html" class="btn btn-primary">View Courses</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="department-card" onclick="location.href='phd.html'">
+                        <img src="./Images/phd.svg" alt="Ph. D.">
+                        <h5>Ph. D.</h5>
+                        <p>View Department of Ph.D.</p>
+                        <a href="phd.html" class="btn btn-primary">View Courses</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="department-card" onclick="location.href='prospectus.html'">
+                        <img src="./Images/pb.svg" alt="Prospectus & Brochures">
+                        <h5>Prospectus & Brochures</h5>
+                        <p>View College Prospectus.</p>
+                        <a href="prospectus.html" class="btn btn-primary">View Courses</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="department-card" onclick="location.href='college-videos.html'">
+                        <img src="./Images/cv.svg" alt="College Videos">
+                        <h5>College Videos</h5>
+                        <p>View College Videos.</p>
+                        <a href="college-videos.html" class="btn btn-primary">View Courses</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <!-- placement  partners -->
+      <div class="container mt-5">
+        <div class="text-center mb-5">
+            <h1 class="section-title">PLACEMENT PARTNERS</h1>
+            <p class="section-subtitle">Placing the right candidate at the right place, Placement partners we have</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="partner-card">
+                    <img src="./Images/google.jpg" style="height: 70px; width: 70px;" alt="Google" class="partner-logo">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="partner-card">
+                    <img src="./Images/amazon.webp" style="height: 70px; width: 70px;" alt="Amazon" class="partner-logo">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="partner-card">
+                    <img src="./Images/youtube.jpg" style="height: 70px; width: 70px;" alt="YouTube" class="partner-logo">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="partner-card">
+                    <img src="./Images/micro.jpeg" style="height: 70px; width: 70px;" alt="Microsoft" class="partner-logo">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="partner-card">
+                    <img src="./Images/swish.jpg" style="height: 70px; width: 70px;" alt="Swish" class="partner-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+<!--  student corner -->
+  
+    <div class="container students-corner">
+      <div class="row">
+          <div class="col-lg-6 mb-4">
+              <div class="row g-3">
+                  <div class="col-6">
+                      <div class="card">
+                          <img src="./Images/cor.jpg" class="card-img-top" alt="Image 1">
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="card">
+                          <img src="./Images/cor2.jpg" class="card-img-top" alt="Image 2">
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="card">
+                          <img src="./Images/cor3.jpg" class="card-img-top" alt="Image 3">
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="card">
+                          <img src="./Images/cor4.jpg" class="card-img-top" alt="Image 4">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+              <h2 class="section-title">STUDENTS CORNER</h2>
+              <p class="section-subtitle">Modern college has offered several opportunities and launched diverse career pathways for the student community. Keeping our eyes to the future, we celebrate the past and visualize a bright future of our college with endless possibilities ahead.</p>
+              <ul class="list-unstyled">
+                  <li class="mb-2">
+                      <a href="#" class="info-link">Health Services &rarr;</a>
+                      <p>Check out Modern College Health Services</p>
+                  </li>
+                  <li class="mb-2">
+                      <a href="#" class="info-link">Scholarship Scheme &rarr;</a>
+                      <p>Check out Modern College Scholarship Scheme</p>
+                  </li>
+                  <li class="mb-2">
+                      <a href="#" class="info-link">International Students Cell &rarr;</a>
+                      <p>Check out Modern College International Students Cell</p>
+                  </li>
+                  <li class="mb-2">
+                      <a href="#" class="info-link">Library &rarr;</a>
+                      <p>Check out Modern College Library</p>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+ 
+
+
+<!-- footer -->
+
+<div class="footer py-5">
+  <div class="container footerContainer">
+    <div class="row footerData">
+      <div class="col-lg-4 col-sm-12">
+          <center><h3>Important links</h3></center>
+          <hr style="color:white"/>
+          <div class="row">
+              <div class="col-md-3">
+                
+              </div>
+              <div class="col-md-9">
+                 
+                    <ul>
+                      <li><a href="https://www.aicte-india.org/">AICTE</a></li>
+                      
+                      <li><a href="https://www.ugc.gov.in/">UGC</a></li>
+                      <li><a href="https://www.education.gov.in/">Ministry of Eduction</a></li>
+                      <li><a href="https://www.nerist.ac.in/moocs">MOOCS</a></li>
+                      <li><a href="https://nerist.ac.in/nirf">NIRF</a></li>
+                      <li><a href="https://www.nad.gov.in/">NAD</a></li>
+                     
+                     </ul>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-12">
+          <center><h3>Download</h3></center>
+          <hr style="color:white"/>
+          <div class="row">
+              <div class="col-md-3">
+                 
+              </div>
+              <div class="col-md-9">
+                 <ul>
+                  <li><a href="https://nerist.ac.in/download-employeeforms">Download Forms</a></li>
+                  <li><a href="https://nerist.ac.in/etc/techno-manuals">Manuals</a></li>
+                  <li><a>SC/ST Grievance Portal</a></li>
+                  <li><a>NAD Cell,NERIST</a></li>
+                  <li><a>Video of NAD</a></li>
+                  <li><a>Covid-19eBook</a></li>
+                  <li><a>Convocation Photos</a></li>
+                 </ul>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-12">
+          <center><h3>online support</h3></center>
+          <hr style="color:white"/>
+          <div class="row">
+              <div class="col-md-3">
+                  <i class="fa-solid fa-headset"></i>
+              </div>
+              <div class="col-md-9">
+                  <p>We provide 24x7 online support to our students for any concerns/queries.<br/>
+                  <i class="fa-solid fa-phone" style="font-size: small;"></i>+91 987654324<br/>
+                  <i class="fa-solid fa-envelope" style="font-size: small;"></i> iitbombay@gamil.com</p>
+              </div>
+          </div>
+      </div>
+      <hr/>
+
+    </div>
+  </div>
+
+  <div class="container-fluid text-center ">
+      <div class="row-lg-8 m-auto">
+          <p>Copyright © 2024 Organic. All Rights Reserved &nbsp;&nbsp;<img src="./images/visa.jpg" height="35" width="50">
+              <img src="./images/Rupay.jpg" height="35" width="50">
+              <img src="./images/mastercard.png" height="35" width="50">
+      </div>
+  </div>
+</div> 
+
+
+<script>
+  function goToNextPage() {
+      // Redirect to the next page
+      window.location.href = "courses.html"; // Replace "next_page_url.html" with the actual URL of the next page
+  }
+</script>
+
+
+</body>
+</html> 
+

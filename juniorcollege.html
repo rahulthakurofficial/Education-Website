@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kendriya Vidyalaya Bombay - Junior College</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-beta3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="./Images/iitLogo.png" type="images/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./university.css">
+    <script src="./university.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <style>
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .hover-effect:hover {
+            background-color: #f8f9fa;
+        }
+        body {
+                background-color: #f4f6f9;
+            }
+            .card:hover {
+                box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+                transform: scale(1.02);
+                transition: all 0.3s ease-in-out;
+            }
+            .hover-effect:hover {
+                background-color: #e9ecef;
+                transition: background-color 0.3s ease-in-out;
+            }
+            .navbar {
+                background-color: #343a40;
+            }
+            .navbar-brand, .nav-link {
+                color: #fff;
+            }
+            .navbar-brand:hover, .nav-link:hover {
+                color: #d4d4d4;
+            }
+            .hero-section {
+                background: url('path_to_hero_image.jpg') no-repeat center center;
+                background-size: cover;
+                height: 60vh;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            .hero-text {
+                background-color: rgba(0, 0, 0, 0.6);
+                padding: 20px;
+                border-radius: 10px;
+            }
+            .card img, .card video {
+                border-top-left-radius: calc(0.25rem - 1px);
+                border-top-right-radius: calc(0.25rem - 1px);
+            }
+            .card {
+            height: 400px; /* Adjust height as needed */
+        }
+        .card-img-top, .card video {
+            height: 60%; /* Adjust percentage as needed */
+            object-fit: cover; /* Ensures the image/video covers the area without distortion */
+        }
+        .card-body {
+            height: 40%; /* Adjust percentage as needed */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-white">
+            <div class="container">
+                <a class="navbar-brand" href="#">KV Bombay</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Academics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Admissions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-text">
+                <h1>Welcome to Kendriya Vidyalaya Bombay</h1>
+                <p>Junior College (Class 11, 12) at IIT Bombay Campus</p>
+            </div>
+        </section>
+    
+        <!-- Main Content -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2>About Our School</h2>
+                    <p>Welcome to the junior college section of Kendriya Vidyalaya Bombay, located at the prestigious IIT Bombay campus. Our institution offers quality education with excellent facilities and experienced faculty members. Join us for a transformative educational experience.</p>
+                </div>
+            </div>
+           <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4 hover-effect">
+                        <img src="./Images/kv.jpg" class="card-img-top" alt="Kendriya Vidyalaya Bombay">
+                        <div class="card-body">
+                            <h5 class="card-title">Our Campus</h5>
+                            <p class="card-text">Explore the beautiful and sprawling campus of IIT Bombay, home to Kendriya Vidyalaya Bombay. Our campus provides a serene and stimulating environment for learning and growth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4 hover-effect">
+                        <video controls class="w-100">
+                            <source src="./Images/video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title">Campus Tour Video</h5>
+                            <p class="card-text">Take a virtual tour of our campus and facilities. Get a glimpse of the environment and infrastructure that make our school a great place to study.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4 hover-effect">
+                        <img src="./Images/kv1.jpeg" class="card-img-top" alt="Kendriya Vidyalaya Bombay">
+                        <div class="card-body">
+                            <h5 class="card-title">Our Campus</h5>
+                            <p class="card-text">Explore the beautiful and sprawling campus of IIT Bombay, home to Kendriya Vidyalaya Bombay. Our campus provides a serene and stimulating environment for learning and growth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4 hover-effect">
+                        <img src="./Images/kv2.jpg" class="card-img-top" alt="Kendriya Vidyalaya Bombay">
+                        <div class="card-body">
+                            <h5 class="card-title">Campus Tour Video</h5>
+                            <p class="card-text">Take a virtual tour of our campus and facilities. Get a glimpse of the environment and infrastructure that make our school a great place to study.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-beta3/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+    
+</body>
+</html>

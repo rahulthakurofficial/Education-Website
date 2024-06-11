@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor Details - IIT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./Images/iitLogo.png" style="height: 40px; width: 50px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Facilities
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Research_and_Development_cell.html">Research and Development Cell</a></li>
+                  <li><a class="dropdown-item" href="Library.html">Library</a></li>
+                  <li><a class="dropdown-item" href="hostelfee.html">Hostels</a></li>
+                  <li><a class="dropdown-item" href="#">Auditorium</a></li>
+                  <li><a class="dropdown-item" href="#">IIT Health Units</a></li>
+                </ul>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Administration
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="faculties.html">Faculties</a></li>
+                  <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
+                  <li><a class="dropdown-item" href="#">Members of the IIT society</a></li>
+                  
+                  <li><a class="dropdown-item" href="#">Offices</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Admission
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="admission.html">Admission Structure</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact_us.html" tabindex="-1" aria-disabled="true">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="login.html" >Login</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Professor Image -->
+            <div class="col-md-4 text-center">
+                <img src="./Images/t1.jpg" class="img-fluid rounded-circle" alt="Professor Image">
+            </div>
+
+            <!-- Professor Details -->
+            <div class="col-md-8">
+                <h2>Dr. John Doe</h2>
+                <p><strong>Department:</strong> Computer Science and Engineering</p>
+                <p><strong>Location:</strong> IIT Bombay, Mumbai, India</p>
+                <p><strong>Experience:</strong> 20 years</p>
+                <p><strong>Thesis:</strong> "Advanced Algorithms in Machine Learning"</p>
+                <p><strong>Projects:</strong> "AI for Healthcare", "Smart City Solutions", "Blockchain for Data Security"</p>
+            </div>
+        </div>
+
+        <!-- Additional Information to fill space -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3>Biography</h3>
+                <p>Dr. John Doe is a renowned professor at IIT Bombay with over 20 years of experience in the field of Computer Science and Engineering. His research interests include machine learning, artificial intelligence, and blockchain technologies. He has published numerous papers in top-tier journals and conferences, and his work has significantly contributed to the advancement of AI and data security.</p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <h3>Quote</h3>
+                <blockquote class="blockquote">
+                    <p class="mb-0">"The best way to predict the future is to create it." - Alan Kay</p>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <h3>Connect with Dr. John Doe</h3>
+                <a href="https://www.linkedin.com/in/johndoe" class="btn btn-outline-primary me-2" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://scholar.google.com/citations?user=johndoe" class="btn btn-outline-success me-2" target="_blank"><i class="fab fa-google"></i> Google Scholar</a>
+                <a href="https://twitter.com/johndoe" class="btn btn-outline-info" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-center text-lg-start mt-5">
+        <div class="text-center p-3">
+            © 2024 IIT Bombay. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+   
